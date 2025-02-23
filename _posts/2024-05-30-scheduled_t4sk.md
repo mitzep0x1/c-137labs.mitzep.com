@@ -1,8 +1,8 @@
 ---
 title: Hunting Malicious Activity in Scheduled Task
 date: 2024-05-30 06:00:00 -0600
-categories: [blueteam, hunting]
-tags: [difficulty:low, endpoint, os:windows]
+categories: [Threat Hunting]
+tags: [difficulty:easy, os:windows]
 image:
   path: https://github.com/lr2t9iz/c-137labs.mitzep.com/assets/46981088/01a0f58c-c82f-4675-9486-cef48ff1fa0f
 ---
