@@ -20,7 +20,9 @@ A "release" command can later be sent to remove the isolation and restore normal
 {: .prompt-info }
 
 ## Usage
-- https://github.com/lr2t9iz/wazuh-live-response/wiki/WLR-Isolation
+- <https://github.com/lr2t9iz/wazuh-live-response/wiki/WLR-Isolation>
+
+<br>
 
 - Copy the [isolation.exe](https://github.com/lr2t9iz/wazuh-live-response/tree/main/endpoint/windows/bin) executable to the Active Response folder on the Windows agent `C:\Program Files (x86)\ossec-agent\active-response\bin\`
 - We can deploy a [lab environment](https://c-137labs.mitzep.com/posts/wazuh-s1em/) by following these instructions to conduct testing.
@@ -65,3 +67,4 @@ PUT /active-response?agents_list=001
 - "release" → Removes the firewall rules and restores communication.
 ![Image](https://github.com/user-attachments/assets/1638a56a-74a4-41ec-9488-200e85632768)
 
+For more details, visit the official [WLR Isolation Wiki](https://github.com/lr2t9iz/wazuh-live-response/wiki/WLR-Isolation)
