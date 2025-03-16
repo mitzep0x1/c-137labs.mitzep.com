@@ -7,11 +7,11 @@ image:
   path: https://github.com/user-attachments/assets/e2e31225-45e8-4583-bf71-d8ae540a88fc
 ---
 
-In security incident response, the ability to quickly isolate a compromised endpoint is crucial. [WLR Isolation](https://github.com/lr2t9iz/wazuh-live-response/wiki/WLR-Isolation), a submodule of Wazuh Live Response, allows security teams to remotely isolate a Windows endpoint using Wazuh's Active Response and the internal Windows firewall.
+In security incident response, the ability to quickly isolate a compromised endpoint is crucial. [C-LR Isolation](https://github.com/lr2t9iz/C-LiveResponse/blob/main/docs/endpoint/C-LR%20Isolatation.md), a submodule of Wazuh Live Response, allows security teams to remotely isolate a Windows endpoint using Wazuh's Active Response and the internal Windows firewall.
 
-This guide will show how to use WLR Isolation via the Wazuh API and DevTools.
+This guide will show how to use C-LR Isolation via the Wazuh API and DevTools.
 
-## How WLR Isolation Works
+## How C-LR Isolation Works
 When a security incident is detected, analysts can send an "isolate" command to an endpoint through the Wazuh API. The endpoint then applies firewall rules to block all network communication except for the Wazuh server and any other necessary hosts.
 
 A "release" command can later be sent to remove the isolation and restore normal connectivity.
@@ -20,7 +20,7 @@ A "release" command can later be sent to remove the isolation and restore normal
 {: .prompt-info }
 
 ## Usage
-- <https://github.com/lr2t9iz/wazuh-live-response/wiki/WLR-Isolation>
+- <https://github.com/lr2t9iz/C-LiveResponse/blob/main/docs/endpoint/C-LR%20Isolatation.md>
 
 <br>
 
@@ -45,7 +45,7 @@ PUT /active-response?agents_list=001
 }
 ```
 - To observe the result, we can run an extended ping and monitor how the connection is lost.
-- We can also find the audit event by applying the filter `data.origin.name:"WLR"` in the Discover section of the Wazuh Dashboard.
+- We can also find the audit event by applying the filter `data.origin.name:"C-LR"` in the Discover section of the Wazuh Dashboard.
 - ≡ > Explorer > Discover
 ![Image](https://github.com/user-attachments/assets/6bc1d43e-ac5c-4dee-908e-d722a036df4c)
 
@@ -67,4 +67,4 @@ PUT /active-response?agents_list=001
 - "release" → Removes the firewall rules and restores communication.
 ![Image](https://github.com/user-attachments/assets/1638a56a-74a4-41ec-9488-200e85632768)
 
-For more details, visit the official [WLR Isolation Wiki](https://github.com/lr2t9iz/wazuh-live-response/wiki/WLR-Isolation)
+For more details, visit the official [C-LR Isolation Docs](https://github.com/lr2t9iz/C-LiveResponse/blob/main/docs/endpoint/C-LR%20Isolatation.md)
