@@ -7,7 +7,7 @@ image:
   path: https://github.com/user-attachments/assets/e2e31225-45e8-4583-bf71-d8ae540a88fc
 ---
 
-In security incident response, the ability to quickly isolate a compromised endpoint is crucial. [C-LR Isolation](https://github.com/lr2t9iz/C-LiveResponse/blob/main/docs/endpoint/C-LR%20Isolatation.md), a submodule of Wazuh Live Response, allows security teams to remotely isolate a Windows endpoint using Wazuh's Active Response and the internal Windows firewall.
+In security incident response, the ability to quickly isolate a compromised endpoint is crucial. [C-LR Isolation](https://github.com/lr2t9iz/C-LiveResponse/blob/main/docs/endpoint/isolation.md), a submodule of Wazuh Live Response, allows security teams to remotely isolate a Windows endpoint using Wazuh's Active Response and the internal Windows firewall.
 
 This guide will show how to use C-LR Isolation via the Wazuh API and DevTools.
 
@@ -20,7 +20,7 @@ A "release" command can later be sent to remove the isolation and restore normal
 {: .prompt-info }
 
 ## Usage
-- <https://github.com/lr2t9iz/C-LiveResponse/blob/main/docs/endpoint/C-LR%20Isolatation.md>
+- <https://github.com/lr2t9iz/C-LiveResponse/blob/main/docs/endpoint/isolation.md>
 
 <br>
 
@@ -67,4 +67,4 @@ PUT /active-response?agents_list=001
 - "release" → Removes the firewall rules and restores communication.
 ![Image](https://github.com/user-attachments/assets/1638a56a-74a4-41ec-9488-200e85632768)
 
-For more details, visit the official [C-LR Isolation Docs](https://github.com/lr2t9iz/C-LiveResponse/blob/main/docs/endpoint/C-LR%20Isolatation.md)
+For more details, visit the official [C-LR Isolation Docs](https://github.com/lr2t9iz/C-LiveResponse/blob/main/docs/endpoint/isolation.md)
